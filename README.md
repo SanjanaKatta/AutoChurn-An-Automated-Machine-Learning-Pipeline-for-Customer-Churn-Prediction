@@ -206,18 +206,6 @@ File:
 
 ---
 
-## 📸 Churn Prediction UI (Frontend)
-
-<img src="images/Churn_Prediction_UI_Full.png" width="850"/>
-
----
-
-### Model Performance (ROC-AUC Curve)
-
-<img src="images/ROC_AUC_Curve.png" width="700"/>
-
----
-
 ## 📁 Project Structure
 
 ```text
