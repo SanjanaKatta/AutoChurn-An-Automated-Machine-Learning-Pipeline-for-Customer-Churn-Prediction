@@ -1,0 +1,7 @@
+2026-01-23 21:23:39,038 - INFO - Checking class imbalance
+2026-01-23 21:23:39,038 - INFO - Class 0 (No) : 4138
+2026-01-23 21:23:39,038 - INFO - Class 1 (Yes): 1496
+2026-01-23 21:23:39,038 - INFO - Imbalance Ratio: 2.77
+2026-01-23 21:23:39,038 - INFO - Applying SMOTE for data balancing
+2026-01-23 21:23:39,048 - ERROR - Error in data_balancing at line 44: Input X contains NaN.
+SMOTE does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values

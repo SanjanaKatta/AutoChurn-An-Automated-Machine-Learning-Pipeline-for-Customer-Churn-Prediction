@@ -1,0 +1,343 @@
+2026-01-23 21:23:21,927 - INFO - Data loaded successfully
+2026-01-23 21:23:21,927 - INFO - Total rows in the data : 7043
+2026-01-23 21:23:21,928 - INFO - Total columns in the data : 24
+2026-01-23 21:23:21,943 - INFO -       customerID  gender  SeniorCitizen Partner Dependents  tenure PhoneService  ...              PaymentMethod MonthlyCharges TotalCharges Churn   SIM  DeviceType     Region
+7038  6840-RESVB    Male              0     Yes        Yes      24          Yes  ...               Mailed check          84.80      1990.50    No  BSNL  New Device  Sub Urban
+7039  2234-XADUH  Female              0     Yes        Yes      72          Yes  ...    Credit card (automatic)         103.20      7362.90    No   Jio  New Device      Urban
+7040  4801-JZAZL  Female              0     Yes        Yes      11           No  ...           Electronic check          29.60       346.45    No  BSNL  Old Device  Sub Urban
+7041  8361-LTMKD    Male              1     Yes         No       4          Yes  ...               Mailed check          74.40       306.60   Yes   Jio  Old Device      Urban
+7042  3186-AJIEK    Male              0      No         No      66          Yes  ...  Bank transfer (automatic)         105.65      6844.50    No   Jio  New Device      Urban
+
+[5 rows x 24 columns]
+2026-01-23 21:23:21,945 - INFO - Independent Column(X): (7043, 22)
+2026-01-23 21:23:21,945 - INFO - Dependent Column(y): (7043,)
+2026-01-23 21:23:21,950 - INFO - X_train Columns:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,951 - INFO - X_test Columns:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,952 - INFO - y_train Sample Data: 3575    0
+4958    0
+1447    1
+3334    1
+4041    0
+Name: Churn, dtype: int64
+2026-01-23 21:23:21,952 - INFO - y_test Sample Data: 4333    0
+6280    0
+6359    0
+3651    0
+2746    0
+Name: Churn, dtype: int64
+2026-01-23 21:23:21,952 - INFO - Training data size : (5634, 22)
+2026-01-23 21:23:21,952 - INFO - Testing data size : (1409, 22)
+2026-01-23 21:23:21,952 - INFO - Selecting Missing Value Technique
+2026-01-23 21:23:21,955 - INFO - Evaluating techniques for column: TotalCharges
+2026-01-23 21:23:21,960 - INFO - mean            -> Score: 2.311184 (mean_diff=0.000000, std_diff=2.009726)
+2026-01-23 21:23:21,967 - INFO - median          -> Score: 3.758913 (mean_diff=1.562575, std_diff=1.706045)
+2026-01-23 21:23:21,970 - INFO - mode            -> Score: 4.647253 (mean_diff=4.030803, std_diff=0.010286)
+2026-01-23 21:23:21,975 - INFO - random          -> Score: 1.315828 (mean_diff=1.221698, std_diff=0.326336)
+2026-01-23 21:23:21,977 - INFO - knn             -> Score: 1.708267 (mean_diff=0.000000, std_diff=2.009726)
+2026-01-23 21:23:21,977 - INFO - iterative       -> Score: 1.708267 (mean_diff=0.000000, std_diff=2.009726)
+2026-01-23 21:23:21,977 - INFO - ffill           -> Score: 2.794323 (mean_diff=1.926153, std_diff=0.868170)
+2026-01-23 21:23:21,993 - INFO - bfill           -> Score: 3.179489 (mean_diff=2.330377, std_diff=0.849112)
+2026-01-23 21:23:21,993 - INFO - interpolation   -> Score: 3.167932 (mean_diff=2.128265, std_diff=1.039667)
+2026-01-23 21:23:21,993 - INFO - BEST technique for TotalCharges: RANDOM | Score=1.315828
+2026-01-23 21:23:21,993 - INFO - Missing Value Handling Completed
+2026-01-23 21:23:21,993 - INFO - Selecting Variable Transformation Technique
+2026-01-23 21:23:21,993 - INFO - X_train Columns : Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_test Columns: Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'TotalCharges', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_train Numerical columns : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_train Categorical columns: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_test Numerical columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_test Categorical columns: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'SIM', 'DeviceType', 'Region'],
+      dtype='object')
+2026-01-23 21:23:21,993 - INFO - X_train Numerical Shape: (5634, 4)
+2026-01-23 21:23:21,993 - INFO - X_train Categorical Shape: (5634, 18)
+2026-01-23 21:23:21,993 - INFO - X_test Numerical Shape: (1409, 4)
+2026-01-23 21:23:21,993 - INFO - X_test Categorical Shape: (1409, 18)
+2026-01-23 21:23:21,993 - INFO - Evaluating transformations for column: SeniorCitizen
+2026-01-23 21:23:21,993 - INFO - Skipping SeniorCitizen (binary/discrete feature)
+2026-01-23 21:23:21,993 - INFO - Evaluating transformations for column: tenure
+2026-01-23 21:23:22,017 - INFO - log             -> Skew: -0.7906, Score: 0.7906
+2026-01-23 21:23:22,024 - INFO - boxcox          -> Skew: 0.2399, Score: 0.2399
+2026-01-23 21:23:22,049 - INFO - yeojohnson      -> Skew: -0.2422, Score: 0.2422
+2026-01-23 21:23:22,067 - INFO - quantile        -> Skew: 1.8005, Score: 1.8005
+2026-01-23 21:23:22,079 - INFO - reciprocal      -> Skew: 0.2399, Score: 0.2399
+2026-01-23 21:23:22,086 - INFO - sqrt            -> Skew: -0.2403, Score: 0.2403
+2026-01-23 21:23:22,104 - INFO - cuberoot        -> Skew: -0.4681, Score: 0.4681
+2026-01-23 21:23:22,121 - INFO - exp             -> Skew: -1.1276, Score: 1.1276
+2026-01-23 21:23:22,130 - INFO - BEST transformation for tenure: boxcox | Score: 0.2399
+2026-01-23 21:23:22,130 - INFO - Evaluating transformations for column: MonthlyCharges
+2026-01-23 21:23:22,134 - INFO - log             -> Skew: -0.7222, Score: 0.7222
+2026-01-23 21:23:22,180 - INFO - boxcox          -> Skew: -0.2660, Score: 0.2660
+2026-01-23 21:23:22,196 - INFO - yeojohnson      -> Skew: -0.2612, Score: 0.2612
+2026-01-23 21:23:22,196 - INFO - quantile        -> Skew: 0.0195, Score: 0.0195
+2026-01-23 21:23:22,212 - INFO - reciprocal      -> Skew: 1.1131, Score: 1.1131
+2026-01-23 21:23:22,232 - INFO - sqrt            -> Skew: -0.4884, Score: 0.4884
+2026-01-23 21:23:22,243 - INFO - cuberoot        -> Skew: -0.5726, Score: 0.5726
+2026-01-23 21:23:22,259 - INFO - exp             -> Skew: nan, Score: nan
+2026-01-23 21:23:22,280 - INFO - BEST transformation for MonthlyCharges: quantile | Score: 0.0195
+2026-01-23 21:23:22,280 - INFO - Evaluating transformations for column: TotalCharges
+2026-01-23 21:23:22,295 - INFO - log             -> Skew: -0.7468, Score: 0.7468
+2026-01-23 21:23:22,343 - INFO - boxcox          -> Skew: -0.1457, Score: 0.1457
+2026-01-23 21:23:22,367 - INFO - yeojohnson      -> Skew: -0.1446, Score: 0.1446
+2026-01-23 21:23:22,373 - INFO - quantile        -> Skew: -0.0041, Score: 0.0041
+2026-01-23 21:23:22,401 - INFO - reciprocal      -> Skew: 3.8447, Score: 3.8447
+2026-01-23 21:23:22,407 - INFO - sqrt            -> Skew: 0.3031, Score: 0.3031
+2026-01-23 21:23:22,423 - INFO - cuberoot        -> Skew: 0.0079, Score: 0.0079
+2026-01-23 21:23:22,439 - INFO - exp             -> Skew: nan, Score: nan
+2026-01-23 21:23:22,477 - INFO - BEST transformation for TotalCharges: quantile | Score: 0.0041
+2026-01-23 21:23:22,477 - INFO - ===================================================
+2026-01-23 21:23:22,477 - INFO - Categorical to Numerical Encoding Started
+2026-01-23 21:23:22,477 - INFO - ===================================================
+2026-01-23 21:23:22,477 - INFO - X_train_cat shape: (5634, 18)
+2026-01-23 21:23:22,477 - INFO - X_test_cat shape : (1409, 18)
+2026-01-23 21:23:22,477 - INFO - Processing Column: gender | Unique Values: 2
+2026-01-23 21:23:22,477 - INFO - gender --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,492 - INFO - Processing Column: Partner | Unique Values: 2
+2026-01-23 21:23:22,492 - INFO - Partner --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,510 - INFO - Processing Column: Dependents | Unique Values: 2
+2026-01-23 21:23:22,510 - INFO - Dependents --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,537 - INFO - Processing Column: PhoneService | Unique Values: 2
+2026-01-23 21:23:22,537 - INFO - PhoneService --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,554 - INFO - Processing Column: MultipleLines | Unique Values: 3
+2026-01-23 21:23:22,554 - INFO - MultipleLines --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,571 - INFO - Processing Column: InternetService | Unique Values: 3
+2026-01-23 21:23:22,571 - INFO - InternetService --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,587 - INFO - Processing Column: OnlineSecurity | Unique Values: 3
+2026-01-23 21:23:22,587 - INFO - OnlineSecurity --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,612 - INFO - Processing Column: OnlineBackup | Unique Values: 3
+2026-01-23 21:23:22,612 - INFO - OnlineBackup --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,632 - INFO - Processing Column: DeviceProtection | Unique Values: 3
+2026-01-23 21:23:22,632 - INFO - DeviceProtection --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,649 - INFO - Processing Column: TechSupport | Unique Values: 3
+2026-01-23 21:23:22,649 - INFO - TechSupport --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,681 - INFO - Processing Column: StreamingTV | Unique Values: 3
+2026-01-23 21:23:22,681 - INFO - StreamingTV --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,702 - INFO - Processing Column: StreamingMovies | Unique Values: 3
+2026-01-23 21:23:22,702 - INFO - StreamingMovies --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,728 - INFO - Processing Column: Contract | Unique Values: 3
+2026-01-23 21:23:22,728 - INFO - Contract --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,748 - INFO - Processing Column: PaperlessBilling | Unique Values: 2
+2026-01-23 21:23:22,748 - INFO - PaperlessBilling --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,768 - INFO - Processing Column: PaymentMethod | Unique Values: 4
+2026-01-23 21:23:22,768 - INFO - PaymentMethod --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,788 - INFO - Processing Column: SIM | Unique Values: 4
+2026-01-23 21:23:22,789 - INFO - SIM --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,805 - INFO - Processing Column: DeviceType | Unique Values: 2
+2026-01-23 21:23:22,805 - INFO - DeviceType --> Binary Feature | Applying Label Encoding
+2026-01-23 21:23:22,832 - INFO - Processing Column: Region | Unique Values: 3
+2026-01-23 21:23:22,832 - INFO - Region --> Multi-class Feature | Applying One-Hot Encoding
+2026-01-23 21:23:22,837 - INFO - ===================================================
+2026-01-23 21:23:22,837 - INFO - Encoding Completed Successfully
+2026-01-23 21:23:22,837 - INFO - ===================================================
+2026-01-23 21:23:22,837 - INFO - Encoded Train Shape: (6761, 32)
+2026-01-23 21:23:22,837 - INFO - Encoded Test Shape : (2525, 32)
+2026-01-23 21:23:22,837 - INFO - Encoded Columns    : ['gender_gender', 'Partner_Partner', 'Dependents_Dependents', 'PhoneService_PhoneService', 'MultipleLines_MultipleLines_No phone service', 'MultipleLines_MultipleLines_Yes', 'InternetService_InternetService_Fiber optic', 'InternetService_InternetService_No', 'OnlineSecurity_OnlineSecurity_No internet service', 'OnlineSecurity_OnlineSecurity_Yes', 'OnlineBackup_OnlineBackup_No internet service', 'OnlineBackup_OnlineBackup_Yes', 'DeviceProtection_DeviceProtection_No internet service', 'DeviceProtection_DeviceProtection_Yes', 'TechSupport_TechSupport_No internet service', 'TechSupport_TechSupport_Yes', 'StreamingTV_StreamingTV_No internet service', 'StreamingTV_StreamingTV_Yes', 'StreamingMovies_StreamingMovies_No internet service', 'StreamingMovies_StreamingMovies_Yes', 'Contract_Contract_One year', 'Contract_Contract_Two year', 'PaperlessBilling_PaperlessBilling', 'PaymentMethod_PaymentMethod_Credit card (automatic)', 'PaymentMethod_PaymentMethod_Electronic check', 'PaymentMethod_PaymentMethod_Mailed check', 'SIM_SIM_BSNL', 'SIM_SIM_Jio', 'SIM_SIM_Vi', 'DeviceType_DeviceType', 'Region_Region_Sub Urban', 'Region_Region_Urban']
+2026-01-23 21:23:22,837 - INFO - Selecting Best Outlier Technique (Skew + Kurtosis + Outlier Ratio)
+2026-01-23 21:23:38,986 - INFO - SeniorCitizen is binary/quasi-constant --> skipping outlier detection
+2026-01-23 21:23:38,989 - INFO - No outliers detected for column: tenure
+2026-01-23 21:23:38,992 - INFO - MonthlyCharges | iqr                Skew: 0.0003 | Kurtosis: 0.1563 | Outlier Ratio: 0.0000 | Score: 0.1566
+2026-01-23 21:23:38,993 - INFO - MonthlyCharges | zscore             Skew: 0.0008 | Kurtosis: 0.0750 | Outlier Ratio: 0.0069 | Score: 0.0827
+2026-01-23 21:23:38,993 - INFO - MonthlyCharges | mad                Skew: 0.0004 | Kurtosis: 0.3054 | Outlier Ratio: 0.0000 | Score: 0.3058
+2026-01-23 21:23:38,993 - INFO - MonthlyCharges | percentile         Skew: 0.0018 | Kurtosis: 0.3334 | Outlier Ratio: 0.0000 | Score: 0.3352
+2026-01-23 21:23:38,993 - INFO - MonthlyCharges | winsor             Skew: 0.0074 | Kurtosis: 0.8262 | Outlier Ratio: 0.0000 | Score: 0.8337
+2026-01-23 21:23:38,993 - INFO - MonthlyCharges | clip               Skew: 0.0008 | Kurtosis: 0.0780 | Outlier Ratio: 0.0069 | Score: 0.0857
+2026-01-23 21:23:38,993 - INFO - BEST outlier method for MonthlyCharges: zscore (Score: 0.0827)
+2026-01-23 21:23:38,993 - INFO - TotalCharges | iqr                Skew: 0.0006 | Kurtosis: 0.1594 | Outlier Ratio: 0.0000 | Score: 0.1600
+2026-01-23 21:23:39,009 - INFO - TotalCharges | zscore             Skew: 0.0003 | Kurtosis: 0.0741 | Outlier Ratio: 0.0066 | Score: 0.0810
+2026-01-23 21:23:39,009 - INFO - TotalCharges | mad                Skew: 0.0004 | Kurtosis: 0.3101 | Outlier Ratio: 0.0000 | Score: 0.3105
+2026-01-23 21:23:39,009 - INFO - TotalCharges | percentile         Skew: 0.0001 | Kurtosis: 0.3289 | Outlier Ratio: 0.0000 | Score: 0.3289
+2026-01-23 21:23:39,009 - INFO - TotalCharges | winsor             Skew: 0.0006 | Kurtosis: 0.8348 | Outlier Ratio: 0.0000 | Score: 0.8354
+2026-01-23 21:23:39,009 - INFO - TotalCharges | clip               Skew: 0.0003 | Kurtosis: 0.0759 | Outlier Ratio: 0.0066 | Score: 0.0828
+2026-01-23 21:23:39,009 - INFO - BEST outlier method for TotalCharges: zscore (Score: 0.0810)
+2026-01-23 21:23:39,009 - INFO - Feature Selection started
+2026-01-23 21:23:39,009 - INFO - Before X_train Shape : (5634, 4)
+2026-01-23 21:23:39,009 - INFO - Before X_test Shape  : (1409, 4)
+2026-01-23 21:23:39,034 - INFO - After Feature Selection Train Shape : (5634, 4)
+2026-01-23 21:23:39,034 - INFO - After Feature Selection Test Shape  : (1409, 4)
+2026-01-23 21:23:39,034 - INFO - Training Data : (6761, 36) --> Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'gender_gender', 'Partner_Partner', 'Dependents_Dependents',
+       'PhoneService_PhoneService',
+       'MultipleLines_MultipleLines_No phone service',
+       'MultipleLines_MultipleLines_Yes',
+       'InternetService_InternetService_Fiber optic',
+       'InternetService_InternetService_No',
+       'OnlineSecurity_OnlineSecurity_No internet service',
+       'OnlineSecurity_OnlineSecurity_Yes',
+       'OnlineBackup_OnlineBackup_No internet service',
+       'OnlineBackup_OnlineBackup_Yes',
+       'DeviceProtection_DeviceProtection_No internet service',
+       'DeviceProtection_DeviceProtection_Yes',
+       'TechSupport_TechSupport_No internet service',
+       'TechSupport_TechSupport_Yes',
+       'StreamingTV_StreamingTV_No internet service',
+       'StreamingTV_StreamingTV_Yes',
+       'StreamingMovies_StreamingMovies_No internet service',
+       'StreamingMovies_StreamingMovies_Yes', 'Contract_Contract_One year',
+       'Contract_Contract_Two year', 'PaperlessBilling_PaperlessBilling',
+       'PaymentMethod_PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_PaymentMethod_Electronic check',
+       'PaymentMethod_PaymentMethod_Mailed check', 'SIM_SIM_BSNL',
+       'SIM_SIM_Jio', 'SIM_SIM_Vi', 'DeviceType_DeviceType',
+       'Region_Region_Sub Urban', 'Region_Region_Urban'],
+      dtype='object')
+2026-01-23 21:23:39,034 - INFO - y_train : (5634,)
+2026-01-23 21:23:39,034 - INFO - Testing Data : (2525, 36) --> Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'gender_gender', 'Partner_Partner', 'Dependents_Dependents',
+       'PhoneService_PhoneService',
+       'MultipleLines_MultipleLines_No phone service',
+       'MultipleLines_MultipleLines_Yes',
+       'InternetService_InternetService_Fiber optic',
+       'InternetService_InternetService_No',
+       'OnlineSecurity_OnlineSecurity_No internet service',
+       'OnlineSecurity_OnlineSecurity_Yes',
+       'OnlineBackup_OnlineBackup_No internet service',
+       'OnlineBackup_OnlineBackup_Yes',
+       'DeviceProtection_DeviceProtection_No internet service',
+       'DeviceProtection_DeviceProtection_Yes',
+       'TechSupport_TechSupport_No internet service',
+       'TechSupport_TechSupport_Yes',
+       'StreamingTV_StreamingTV_No internet service',
+       'StreamingTV_StreamingTV_Yes',
+       'StreamingMovies_StreamingMovies_No internet service',
+       'StreamingMovies_StreamingMovies_Yes', 'Contract_Contract_One year',
+       'Contract_Contract_Two year', 'PaperlessBilling_PaperlessBilling',
+       'PaymentMethod_PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_PaymentMethod_Electronic check',
+       'PaymentMethod_PaymentMethod_Mailed check', 'SIM_SIM_BSNL',
+       'SIM_SIM_Jio', 'SIM_SIM_Vi', 'DeviceType_DeviceType',
+       'Region_Region_Sub Urban', 'Region_Region_Urban'],
+      dtype='object')
+2026-01-23 21:23:39,034 - INFO - y_test : (1409,)
+2026-01-23 21:23:39,034 - INFO - Feature Selection Completed Successfully
+2026-01-23 21:23:39,034 - INFO - Data Balancing Technique
+2026-01-23 21:23:39,037 - INFO - Before X_train Shape : (5634, 36)
+2026-01-23 21:23:39,037 - INFO - Before y_train shape : (5634,)
+2026-01-23 21:23:39,037 - INFO - Before X_test Shape  : (1409, 36)
+2026-01-23 21:23:39,037 - INFO - Before y_test shape : (1409,)
+2026-01-23 21:23:39,037 - INFO - Before :No.of rows for Yes class : 1496
+2026-01-23 21:23:39,038 - INFO - Before :No.of rows for No class : 4138
+2026-01-23 21:23:39,048 - INFO - After X_train Shape : (5634, 36)
+2026-01-23 21:23:39,048 - INFO - After X_test Shape : (1409, 36)
+2026-01-23 21:23:39,048 - INFO - After y_train Shape : (5634,)
+2026-01-23 21:23:39,048 - INFO - After y_test Shape : (1409,)
+2026-01-23 21:23:39,049 - INFO - After :No.of rows for Yes class : 1496
+2026-01-23 21:23:39,049 - INFO - After :No.of rows for No class : 4138
+2026-01-23 21:23:39,049 - INFO - Data balancing Completed
+2026-01-23 21:23:39,049 - INFO - Selecting Best Feature Scaling Technique (Statistical Scoring)
+2026-01-23 21:23:39,095 - INFO - Missing values handled using Median Imputation
+2026-01-23 21:23:39,102 - INFO - STANDARD scaler score = 2.6420
+2026-01-23 21:23:39,126 - INFO - MINMAX scaler score = 2.6420
+2026-01-23 21:23:39,150 - INFO - ROBUST scaler score = 2.6420
+2026-01-23 21:23:39,164 - INFO - MAXABS scaler score = 2.6420
+2026-01-23 21:23:39,164 - INFO - BEST SCALER SELECTED = ROBUST
+2026-01-23 21:23:39,228 - INFO - Feature stats AFTER scaling:
+       SeniorCitizen       tenure  MonthlyCharges  TotalCharges  gender_gender  Partner_Partner  Dependents_Dependents  PhoneService_PhoneService  MultipleLines_MultipleLines_No phone service  MultipleLines_MultipleLines_Yes  InternetService_InternetService_Fiber optic  InternetService_InternetService_No  OnlineSecurity_OnlineSecurity_No internet service  OnlineSecurity_OnlineSecurity_Yes  OnlineBackup_OnlineBackup_No internet service  OnlineBackup_OnlineBackup_Yes  DeviceProtection_DeviceProtection_No internet service  DeviceProtection_DeviceProtection_Yes  TechSupport_TechSupport_No internet service  TechSupport_TechSupport_Yes  StreamingTV_StreamingTV_No internet service  StreamingTV_StreamingTV_Yes  StreamingMovies_StreamingMovies_No internet service  StreamingMovies_StreamingMovies_Yes  Contract_Contract_One year  Contract_Contract_Two year  PaperlessBilling_PaperlessBilling  PaymentMethod_PaymentMethod_Credit card (automatic)  PaymentMethod_PaymentMethod_Electronic check  PaymentMethod_PaymentMethod_Mailed check  SIM_SIM_BSNL  SIM_SIM_Jio   SIM_SIM_Vi  DeviceType_DeviceType  Region_Region_Sub Urban  Region_Region_Urban
+count    5634.000000  5634.000000     5634.000000   5634.000000    5634.000000      5634.000000            5634.000000                5634.000000                                   5634.000000                      5634.000000                                  5634.000000                         5634.000000                                        5634.000000                        5634.000000                                    5634.000000                    5634.000000                                            5634.000000                            5634.000000                                  5634.000000                  5634.000000                                  5634.000000                  5634.000000                                          5634.000000                          5634.000000                 5634.000000                 5634.000000                        5634.000000                                          5634.000000                                   5634.000000                               5634.000000   5634.000000  5634.000000  5634.000000            5634.000000              5634.000000          5634.000000
+mean        0.160809     0.073328       -0.000234     -0.000411      -0.487575         0.484558              -0.298722                   0.097977                                      0.076145                         0.342208                                     0.352325                            0.174476                                           0.174476                           0.224530                                       0.174476                       0.278843                                               0.174476                               0.271565                                     0.174476                     0.230564                                     0.174476                     0.306532                                             0.174476                             0.311324                    0.171459                    0.187966                          -0.409833                                             0.175896                                      0.266596                                  0.181754      0.313277     0.180689     0.134363              -0.342741                 0.273163             0.352325
+std         0.367388     0.530968        0.737913      0.740313       0.499890         0.499806               0.457738                   0.297309                                      0.265253                         0.474491                                     0.477737                            0.379552                                           0.379552                           0.417309                                       0.379552                       0.448470                                               0.379552                               0.444806                                     0.379552                     0.421231                                     0.379552                     0.461094                                             0.379552                             0.463076                    0.376943                    0.390720                           0.491846                                             0.380766                                      0.442218                                  0.385676      0.463867     0.384794     0.341072               0.474668                 0.445623             0.477737
+min         0.000000    -0.630435       -2.227278     -2.231896      -1.000000         0.000000              -1.000000                   0.000000                                      0.000000                         0.000000                                     0.000000                            0.000000                                           0.000000                           0.000000                                       0.000000                       0.000000                                               0.000000                               0.000000                                     0.000000                     0.000000                                     0.000000                     0.000000                                             0.000000                             0.000000                    0.000000                    0.000000                          -1.000000                                             0.000000                                      0.000000                                  0.000000      0.000000     0.000000     0.000000              -1.000000                 0.000000             0.000000
+25%         0.000000    -0.434783       -0.500516     -0.500572      -1.000000         0.000000              -1.000000                   0.000000                                      0.000000                         0.000000                                     0.000000                            0.000000                                           0.000000                           0.000000                                       0.000000                       0.000000                                               0.000000                               0.000000                                     0.000000                     0.000000                                     0.000000                     0.000000                                             0.000000                             0.000000                    0.000000                    0.000000                          -1.000000                                             0.000000                                      0.000000                                  0.000000      0.000000     0.000000     0.000000              -1.000000                 0.000000             0.000000
+50%         0.000000     0.000000        0.000000      0.000000       0.000000         0.000000               0.000000                   0.000000                                      0.000000                         0.000000                                     0.000000                            0.000000                                           0.000000                           0.000000                                       0.000000                       0.000000                                               0.000000                               0.000000                                     0.000000                     0.000000                                     0.000000                     0.000000                                             0.000000                             0.000000                    0.000000                    0.000000                           0.000000                                             0.000000                                      0.000000                                  0.000000      0.000000     0.000000     0.000000               0.000000                 0.000000             0.000000
+75%         0.000000     0.565217        0.499484      0.499428       0.000000         1.000000               0.000000                   0.000000                                      0.000000                         1.000000                                     1.000000                            0.000000                                           0.000000                           0.000000                                       0.000000                       1.000000                                               0.000000                               1.000000                                     0.000000                     0.000000                                     0.000000                     1.000000                                             0.000000                             1.000000                    0.000000                    0.000000                           0.000000                                             0.000000                                      1.000000                                  0.000000      1.000000     0.000000     0.000000               0.000000                 1.000000             1.000000
+max         1.000000     0.934783        2.227378      2.230861       0.000000         1.000000               0.000000                   1.000000                                      1.000000                         1.000000                                     1.000000                            1.000000                                           1.000000                           1.000000                                       1.000000                       1.000000                                               1.000000                               1.000000                                     1.000000                     1.000000                                     1.000000                     1.000000                                             1.000000                             1.000000                    1.000000                    1.000000                           0.000000                                             1.000000                                      1.000000                                  1.000000      1.000000     1.000000     1.000000               0.000000                 1.000000             1.000000
+2026-01-23 21:23:39,228 - INFO - X_train null values after scaling:
+SeniorCitizen                                            0
+tenure                                                   0
+MonthlyCharges                                           0
+TotalCharges                                             0
+gender_gender                                            0
+Partner_Partner                                          0
+Dependents_Dependents                                    0
+PhoneService_PhoneService                                0
+MultipleLines_MultipleLines_No phone service             0
+MultipleLines_MultipleLines_Yes                          0
+InternetService_InternetService_Fiber optic              0
+InternetService_InternetService_No                       0
+OnlineSecurity_OnlineSecurity_No internet service        0
+OnlineSecurity_OnlineSecurity_Yes                        0
+OnlineBackup_OnlineBackup_No internet service            0
+OnlineBackup_OnlineBackup_Yes                            0
+DeviceProtection_DeviceProtection_No internet service    0
+DeviceProtection_DeviceProtection_Yes                    0
+TechSupport_TechSupport_No internet service              0
+TechSupport_TechSupport_Yes                              0
+StreamingTV_StreamingTV_No internet service              0
+StreamingTV_StreamingTV_Yes                              0
+StreamingMovies_StreamingMovies_No internet service      0
+StreamingMovies_StreamingMovies_Yes                      0
+Contract_Contract_One year                               0
+Contract_Contract_Two year                               0
+PaperlessBilling_PaperlessBilling                        0
+PaymentMethod_PaymentMethod_Credit card (automatic)      0
+PaymentMethod_PaymentMethod_Electronic check             0
+PaymentMethod_PaymentMethod_Mailed check                 0
+SIM_SIM_BSNL                                             0
+SIM_SIM_Jio                                              0
+SIM_SIM_Vi                                               0
+DeviceType_DeviceType                                    0
+Region_Region_Sub Urban                                  0
+Region_Region_Urban                                      0
+2026-01-23 21:23:39,228 - INFO - X_test null values after scaling:
+SeniorCitizen                                            0
+tenure                                                   0
+MonthlyCharges                                           0
+TotalCharges                                             0
+gender_gender                                            0
+Partner_Partner                                          0
+Dependents_Dependents                                    0
+PhoneService_PhoneService                                0
+MultipleLines_MultipleLines_No phone service             0
+MultipleLines_MultipleLines_Yes                          0
+InternetService_InternetService_Fiber optic              0
+InternetService_InternetService_No                       0
+OnlineSecurity_OnlineSecurity_No internet service        0
+OnlineSecurity_OnlineSecurity_Yes                        0
+OnlineBackup_OnlineBackup_No internet service            0
+OnlineBackup_OnlineBackup_Yes                            0
+DeviceProtection_DeviceProtection_No internet service    0
+DeviceProtection_DeviceProtection_Yes                    0
+TechSupport_TechSupport_No internet service              0
+TechSupport_TechSupport_Yes                              0
+StreamingTV_StreamingTV_No internet service              0
+StreamingTV_StreamingTV_Yes                              0
+StreamingMovies_StreamingMovies_No internet service      0
+StreamingMovies_StreamingMovies_Yes                      0
+Contract_Contract_One year                               0
+Contract_Contract_Two year                               0
+PaperlessBilling_PaperlessBilling                        0
+PaymentMethod_PaymentMethod_Credit card (automatic)      0
+PaymentMethod_PaymentMethod_Electronic check             0
+PaymentMethod_PaymentMethod_Mailed check                 0
+SIM_SIM_BSNL                                             0
+SIM_SIM_Jio                                              0
+SIM_SIM_Vi                                               0
+DeviceType_DeviceType                                    0
+Region_Region_Sub Urban                                  0
+Region_Region_Urban                                      0
+2026-01-23 21:23:39,228 - INFO - Feature Scaling Completed Successfully

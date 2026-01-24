@@ -1,0 +1,275 @@
+:root {
+    /* "Warm Sunset" Palette */
+    --primary-color: #ff6b6b;      /* Vibrant Coral/Salmon */
+    --primary-hover: #ee5253;      /* Darker Coral */
+    --accent-color: #ff9f43;       /* Warm Orange for highlights */
+
+    /* Background Gradient (Warm Peach to Cream) */
+    --bg-gradient: linear-gradient(135deg, #fff0f0 0%, #ffecd2 100%);
+
+    --card-bg: rgba(255, 255, 255, 0.85); /* Semi-transparent warm white */
+    --text-primary: #2d3436;       /* Dark Warm Grey (Not harsh black) */
+    --text-secondary: #636e72;     /* Muted Grey */
+
+    --border-color: #fab1a0;       /* Soft Peach Border */
+    --success-color: #00b894;      /* Teal Green (for low churn) */
+    --danger-color: #d63031;       /* Strong Red (for high churn) */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 900px;
+    padding: 45px;
+    border-radius: 25px;
+    /* Soft warm shadow */
+    box-shadow: 0 20px 60px rgba(255, 107, 107, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* --- Highlights & Sections --- */
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ffeaa7; /* dashed yellow line divider */
+}
+
+.form-section h2 {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Add a small dot before headers */
+.form-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* --- SIM CARD SECTION (Special Look) --- */
+.highlight-box {
+    background: linear-gradient(to right, #fff5f5, #fff);
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 35px;
+}
+
+.sim-selection-group {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sim-card {
+    position: relative;
+    cursor: pointer;
+    flex: 1;
+    min-width: 110px;
+}
+
+.sim-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-content img {
+    height: 50px;
+    width: auto;
+    max-width: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.card-content span {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+/* Hover & Selected States */
+.sim-card:hover .card-content {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.15);
+    border-color: var(--border-color);
+}
+
+.sim-card input[type="radio"]:checked + .card-content {
+    border-color: var(--primary-color);
+    background-color: #fff0f0; /* Light pink tint */
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.sim-card input[type="radio"]:checked + .card-content span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+/* ----------------------------------- */
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.grid-row.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 14px;
+    border: 2px solid #eee; /* Subtle border */
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
+}
+
+/* --- BUTTON --- */
+button#predictBtn {
+    width: 100%;
+    padding: 20px;
+    /* Gradient Button */
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button#predictBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+}
+
+button#predictBtn:active {
+    transform: scale(0.98);
+}
+
+/* Result Box */
+#resultContainer {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hidden { display: none; }
+
+#resultContainer h3 {
+    color: var(--text-primary);
+    margin-top: 0;
+}
+
+.churn-yes { color: var(--danger-color); font-weight: 800; font-size: 1.5rem; }
+.churn-no { color: var(--success-color); font-weight: 800; font-size: 1.5rem; }
+
+#closeBtn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#closeBtn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container { padding: 25px; }
+    .grid-row, .grid-row.three-col { grid-template-columns: 1fr; }
+    .sim-selection-group { flex-direction: column; }
+    .card-content { flex-direction: row; justify-content: flex-start; padding: 15px 25px;}
+    .card-content img { margin-bottom: 0; margin-right: 20px; width: 40px; }
+}

@@ -1,0 +1,702 @@
+2026-01-23 21:23:21,993 - INFO - Log Transformation
+2026-01-23 21:23:22,009 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,011 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,012 - INFO - Log Transformation Completed
+2026-01-23 21:23:22,015 - INFO - After X_train Data :         tenure
+2142  3.091042
+1623  4.007333
+6074  0.693147
+1362  1.609438
+6754  0.000000
+2026-01-23 21:23:22,017 - INFO - After X_test Data :         tenure
+185   0.693147
+2715  3.737670
+3825  3.970292
+1807  0.693147
+132   4.219508
+2026-01-23 21:23:22,018 - INFO - Boxcox Transformation
+2026-01-23 21:23:22,020 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,023 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,024 - INFO - Boxcox Transformation Completed
+2026-01-23 21:23:22,024 - INFO - After X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,024 - INFO - After X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,024 - INFO - Yeojohnson Transformation
+2026-01-23 21:23:22,024 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,024 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,040 - INFO - Yeojohnson Transformation Completed
+2026-01-23 21:23:22,040 - INFO - After X_train Data :      tenure
+0 -0.213935
+1  0.901579
+2 -1.654653
+3 -1.276377
+4 -1.853109
+2026-01-23 21:23:22,040 - INFO - After X_test Data :      tenure
+0 -1.654653
+1  0.524205
+2  0.846984
+3 -1.654653
+4  1.232503
+2026-01-23 21:23:22,049 - INFO - Quantile Transformation
+2026-01-23 21:23:22,049 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,049 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,055 - INFO - Quantile Transformation Completed
+2026-01-23 21:23:22,055 - INFO - After X_train Data :         tenure
+2142 -0.223916
+1623  0.636387
+6074 -1.705570
+1362 -0.999986
+6754 -5.199338
+2026-01-23 21:23:22,055 - INFO - After X_test Data :      tenure
+0 -1.705570
+1  0.287442
+2  0.582009
+3 -1.705570
+4  1.157061
+2026-01-23 21:23:22,067 - INFO - Reciprocal Transformation
+2026-01-23 21:23:22,067 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,073 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,073 - INFO - Reciprocal Transformation Completed
+2026-01-23 21:23:22,075 - INFO - After X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,078 - INFO - After X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,080 - INFO - Square Root Transformation
+2026-01-23 21:23:22,082 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,084 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,085 - INFO - Square Root Transformation Completed
+2026-01-23 21:23:22,086 - INFO - After X_train Data :         tenure
+2142  4.582576
+1623  7.348469
+6074  1.000000
+1362  2.000000
+6754  0.000000
+2026-01-23 21:23:22,086 - INFO - After X_test Data :         tenure
+185   1.000000
+2715  6.403124
+3825  7.211103
+1807  1.000000
+132   8.185353
+2026-01-23 21:23:22,086 - INFO - Cube Root Transformation
+2026-01-23 21:23:22,086 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,086 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,086 - INFO - Cube Root Transformation Completed
+2026-01-23 21:23:22,086 - INFO - After X_train Data :         tenure
+2142  2.758924
+1623  3.779763
+6074  1.000000
+1362  1.587401
+6754  0.000000
+2026-01-23 21:23:22,103 - INFO - After X_test Data :         tenure
+185   1.000000
+2715  3.448217
+3825  3.732511
+1807  1.000000
+132   4.061548
+2026-01-23 21:23:22,105 - INFO - Exponential Transformation
+2026-01-23 21:23:22,109 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,113 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,116 - INFO - Exponential Transformation Completed
+2026-01-23 21:23:22,118 - INFO - After X_train Data :             tenure
+2142  22026.465795
+1623  22026.465795
+6074      2.718282
+1362     54.598150
+6754      1.000000
+2026-01-23 21:23:22,120 - INFO - After X_test Data :             tenure
+185       2.718282
+2715  22026.465795
+3825  22026.465795
+1807      2.718282
+132   22026.465795
+2026-01-23 21:23:22,122 - INFO - Boxcox Transformation
+2026-01-23 21:23:22,123 - INFO - Before X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,126 - INFO - Before X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,126 - INFO - Boxcox Transformation Completed
+2026-01-23 21:23:22,127 - INFO - After X_train Data :       tenure
+2142      21
+1623      54
+6074       1
+1362       4
+6754       0
+2026-01-23 21:23:22,130 - INFO - After X_test Data :       tenure
+185        1
+2715      41
+3825      52
+1807       1
+132       67
+2026-01-23 21:23:22,131 - INFO - Log Transformation
+2026-01-23 21:23:22,132 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,134 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,134 - INFO - Log Transformation Completed
+2026-01-23 21:23:22,134 - INFO - After X_train Data :       MonthlyCharges
+2142        4.187379
+1623        4.587006
+6074        3.196630
+1362        4.265493
+6754        4.141546
+2026-01-23 21:23:22,134 - INFO - After X_test Data :       MonthlyCharges
+185         3.250374
+2715        3.267666
+3825        3.013081
+1807        4.348341
+132         3.942552
+2026-01-23 21:23:22,141 - INFO - Boxcox Transformation
+2026-01-23 21:23:22,141 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,141 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,175 - INFO - Boxcox Transformation Completed
+2026-01-23 21:23:22,177 - INFO - After X_train Data :       MonthlyCharges
+2142       50.178569
+1623       73.450016
+6074       18.925476
+1362       54.078157
+6754       48.018096
+2026-01-23 21:23:22,179 - INFO - After X_test Data :       MonthlyCharges
+185        19.988521
+2715       20.341893
+3825       15.667418
+1807       58.533454
+132        39.629635
+2026-01-23 21:23:22,180 - INFO - Yeojohnson Transformation
+2026-01-23 21:23:22,182 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,184 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,190 - INFO - Yeojohnson Transformation Completed
+2026-01-23 21:23:22,193 - INFO - After X_train Data :    MonthlyCharges
+0        0.016692
+1        1.067081
+2       -1.385703
+3        0.192437
+4       -0.080621
+2026-01-23 21:23:22,195 - INFO - After X_test Data :    MonthlyCharges
+0       -1.338263
+1       -1.322487
+2       -1.530909
+3        0.393370
+4       -0.458043
+2026-01-23 21:23:22,196 - INFO - Quantile Transformation
+2026-01-23 21:23:22,196 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,196 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,196 - INFO - Quantile Transformation Completed
+2026-01-23 21:23:22,196 - INFO - After X_train Data :       MonthlyCharges
+2142       -0.147316
+1623        0.995273
+6074       -0.963839
+1362       -0.018820
+6754       -0.184216
+2026-01-23 21:23:22,196 - INFO - After X_test Data :    MonthlyCharges
+0       -0.879040
+1       -0.816150
+2       -2.063775
+3        0.194650
+4       -0.425228
+2026-01-23 21:23:22,196 - INFO - Reciprocal Transformation
+2026-01-23 21:23:22,212 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,212 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,212 - INFO - Reciprocal Transformation Completed
+2026-01-23 21:23:22,212 - INFO - After X_train Data :       MonthlyCharges
+2142        0.015420
+1623        0.010288
+6074        0.042644
+1362        0.014245
+6754        0.016155
+2026-01-23 21:23:22,212 - INFO - After X_test Data :       MonthlyCharges
+185         0.040323
+2715        0.039604
+3825        0.051680
+1807        0.013098
+132         0.019782
+2026-01-23 21:23:22,212 - INFO - Square Root Transformation
+2026-01-23 21:23:22,212 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,212 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,212 - INFO - Square Root Transformation Completed
+2026-01-23 21:23:22,229 - INFO - After X_train Data :       MonthlyCharges
+2142        8.052950
+1623        9.859006
+6074        4.842520
+1362        8.378544
+6754        7.867655
+2026-01-23 21:23:22,231 - INFO - After X_test Data :       MonthlyCharges
+185         4.979960
+2715        5.024938
+3825        4.398863
+1807        8.737849
+132         7.109852
+2026-01-23 21:23:22,234 - INFO - Cube Root Transformation
+2026-01-23 21:23:22,236 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,238 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,238 - INFO - Cube Root Transformation Completed
+2026-01-23 21:23:22,241 - INFO - After X_train Data :       MonthlyCharges
+2142        4.017631
+1623        4.597857
+6074        2.862294
+1362        4.125207
+6754        3.955763
+2026-01-23 21:23:22,243 - INFO - After X_test Data :       MonthlyCharges
+185         2.916199
+2715        2.933732
+3825        2.684687
+1807        4.242316
+132         3.697490
+2026-01-23 21:23:22,243 - INFO - Exponential Transformation
+2026-01-23 21:23:22,243 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,243 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,243 - INFO - Exponential Transformation Completed
+2026-01-23 21:23:22,243 - INFO - After X_train Data :       MonthlyCharges
+2142    22026.465795
+1623    22026.465795
+6074    22026.465795
+1362    22026.465795
+6754    22026.465795
+2026-01-23 21:23:22,243 - INFO - After X_test Data :       MonthlyCharges
+185     22026.465795
+2715    22026.465795
+3825    22026.465795
+1807    22026.465795
+132     22026.465795
+2026-01-23 21:23:22,259 - INFO - Quantile Transformation
+2026-01-23 21:23:22,259 - INFO - Before X_train Data :       MonthlyCharges
+2142           64.85
+1623           97.20
+6074           23.45
+1362           70.20
+6754           61.90
+2026-01-23 21:23:22,259 - INFO - Before X_test Data :       MonthlyCharges
+185            24.80
+2715           25.25
+3825           19.35
+1807           76.35
+132            50.55
+2026-01-23 21:23:22,271 - INFO - Quantile Transformation Completed
+2026-01-23 21:23:22,271 - INFO - After X_train Data :       MonthlyCharges
+2142       -0.147316
+1623        0.995273
+6074       -0.963839
+1362       -0.018820
+6754       -0.184216
+2026-01-23 21:23:22,277 - INFO - After X_test Data :    MonthlyCharges
+0       -0.879040
+1       -0.816150
+2       -2.063775
+3        0.194650
+4       -0.425228
+2026-01-23 21:23:22,280 - INFO - Log Transformation
+2026-01-23 21:23:22,280 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,287 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,288 - INFO - Log Transformation Completed
+2026-01-23 21:23:22,290 - INFO - After X_train Data :       TotalCharges
+2142      7.198782
+1623      8.542949
+6074      3.196630
+1362      5.476254
+6754      5.540871
+2026-01-23 21:23:22,294 - INFO - After X_test Data :       TotalCharges
+185       3.250374
+2715      6.905202
+3825      6.939932
+1807      4.348341
+132       8.089820
+2026-01-23 21:23:22,296 - INFO - Boxcox Transformation
+2026-01-23 21:23:22,298 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,301 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,333 - INFO - Boxcox Transformation Completed
+2026-01-23 21:23:22,333 - INFO - After X_train Data :       TotalCharges
+2142     20.844750
+1623     31.053016
+6074      4.861973
+1362     11.984660
+6754     12.251528
+2026-01-23 21:23:22,341 - INFO - After X_test Data :       TotalCharges
+185       4.988773
+2715     19.046062
+3825     19.251855
+1807      7.963561
+132      27.211777
+2026-01-23 21:23:22,343 - INFO - Yeojohnson Transformation
+2026-01-23 21:23:22,347 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,349 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,361 - INFO - Yeojohnson Transformation Completed
+2026-01-23 21:23:22,361 - INFO - After X_train Data :    TotalCharges
+0     -0.021424
+1      1.170899
+2     -1.883934
+3     -1.057138
+4     -1.025957
+2026-01-23 21:23:22,361 - INFO - After X_test Data :    TotalCharges
+0     -1.869473
+1     -0.231667
+2     -0.207610
+3     -1.526080
+4      0.722429
+2026-01-23 21:23:22,367 - INFO - Quantile Transformation
+2026-01-23 21:23:22,368 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,368 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,373 - INFO - Quantile Transformation Completed
+2026-01-23 21:23:22,373 - INFO - After X_train Data :       TotalCharges
+2142     -0.040869
+1623      1.024347
+6074     -2.018448
+1362     -0.903227
+6754     -0.880673
+2026-01-23 21:23:22,373 - INFO - After X_test Data :    TotalCharges
+0     -1.990403
+1     -0.230866
+2     -0.209420
+3     -1.357204
+4      0.555980
+2026-01-23 21:23:22,373 - INFO - Reciprocal Transformation
+2026-01-23 21:23:22,373 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,392 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,392 - INFO - Reciprocal Transformation Completed
+2026-01-23 21:23:22,392 - INFO - After X_train Data :       TotalCharges
+2142      0.000748
+1623      0.000195
+6074      0.042644
+1362      0.004203
+6754      0.003939
+2026-01-23 21:23:22,398 - INFO - After X_test Data :       TotalCharges
+185       0.040323
+2715      0.001004
+3825      0.000969
+1807      0.013098
+132       0.000307
+2026-01-23 21:23:22,401 - INFO - Square Root Transformation
+2026-01-23 21:23:22,401 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,407 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,407 - INFO - Square Root Transformation Completed
+2026-01-23 21:23:22,407 - INFO - After X_train Data :       TotalCharges
+2142     36.562276
+1623     71.620179
+6074      4.842520
+1362     15.425628
+6754     15.934240
+2026-01-23 21:23:22,407 - INFO - After X_test Data :       TotalCharges
+185       4.979960
+2715     31.566596
+3825     32.120087
+1807      8.737849
+132      57.097285
+2026-01-23 21:23:22,407 - INFO - Cube Root Transformation
+2026-01-23 21:23:22,407 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,423 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,423 - INFO - Cube Root Transformation Completed
+2026-01-23 21:23:22,423 - INFO - After X_train Data :       TotalCharges
+2142     11.015955
+1623     17.246075
+6074      2.862294
+1362      6.196720
+6754      6.332194
+2026-01-23 21:23:22,423 - INFO - After X_test Data :       TotalCharges
+185       2.916199
+2715      9.988153
+3825     10.104569
+1807      4.242316
+132      14.827809
+2026-01-23 21:23:22,423 - INFO - Exponential Transformation
+2026-01-23 21:23:22,423 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,439 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,439 - INFO - Exponential Transformation Completed
+2026-01-23 21:23:22,439 - INFO - After X_train Data :       TotalCharges
+2142  22026.465795
+1623  22026.465795
+6074  22026.465795
+1362  22026.465795
+6754  22026.465795
+2026-01-23 21:23:22,439 - INFO - After X_test Data :       TotalCharges
+185   22026.465795
+2715  22026.465795
+3825  22026.465795
+1807  22026.465795
+132   22026.465795
+2026-01-23 21:23:22,439 - INFO - Quantile Transformation
+2026-01-23 21:23:22,462 - INFO - Before X_train Data :       TotalCharges
+2142       1336.80
+1623       5129.45
+6074         23.45
+1362        237.95
+6754        253.90
+2026-01-23 21:23:22,465 - INFO - Before X_test Data :       TotalCharges
+185          24.80
+2715        996.45
+3825       1031.70
+1807         76.35
+132        3260.10
+2026-01-23 21:23:22,475 - INFO - Quantile Transformation Completed
+2026-01-23 21:23:22,477 - INFO - After X_train Data :       TotalCharges
+2142     -0.040869
+1623      1.024347
+6074     -2.018448
+1362     -0.903227
+6754     -0.880673
+2026-01-23 21:23:22,477 - INFO - After X_test Data :    TotalCharges
+0     -1.990403
+1     -0.230866
+2     -0.209420
+3     -1.357204
+4      0.555980

@@ -1,0 +1,39 @@
+2026-01-23 21:23:39,228 - INFO - =========KNeighborsClassifier===========
+2026-01-23 21:23:40,784 - INFO - KNN Test Accuracy : 0.7324343506032647
+2026-01-23 21:23:40,784 - INFO - =========GaussianNB===========
+2026-01-23 21:23:40,797 - INFO - Naive Bayes Test Accuracy : 0.7388218594748048
+2026-01-23 21:23:40,797 - INFO - =========LogisticRegression===========
+2026-01-23 21:23:40,823 - INFO - LogisticRegression Test Accuracy : 0.7324343506032647
+2026-01-23 21:23:40,823 - INFO - =========DecisionTreeClassifier===========
+2026-01-23 21:23:40,873 - INFO - DecisionTreeClassifier Test Accuracy : 0.7132718239886444
+2026-01-23 21:23:40,873 - INFO - =========RandomForestClassifier===========
+2026-01-23 21:23:40,915 - INFO - RandomForestClassifier Test Accuracy : 0.7239176721078779
+2026-01-23 21:23:40,915 - INFO - =========AdabostClassifier===========
+2026-01-23 21:23:40,962 - INFO - AdaBoostClassifier Test Accuracy : 0.7537260468417317
+2026-01-23 21:23:40,962 - INFO - =========GradientBoostingClassifier===========
+2026-01-23 21:23:41,040 - INFO - GradientBoostingClassifier Test Accuracy : 0.7359829666430092
+2026-01-23 21:23:41,040 - INFO - =========XGBClassifier===========
+2026-01-23 21:23:42,880 - INFO - XGBClassifier Test Accuracy : 0.7274662881476224
+2026-01-23 21:23:42,880 - INFO - =========SVM===========
+2026-01-23 21:23:48,948 - INFO - SVM Test Accuracy : 0.7260468417317246
+2026-01-23 21:24:00,868 - INFO - KNN ROC-AUC Score: 0.6385380976533791
+2026-01-23 21:24:00,868 - INFO - Naive Bayes ROC-AUC Score: 0.7719251710538573
+2026-01-23 21:24:00,870 - INFO - Logistic Regression ROC-AUC Score: 0.7315994182616167
+2026-01-23 21:24:00,870 - INFO - Decision Tree ROC-AUC Score: 0.6360214580723964
+2026-01-23 21:24:00,870 - INFO - Random Forest ROC-AUC Score: 0.6631144741064312
+2026-01-23 21:24:00,870 - INFO - AdaBoost ROC-AUC Score: 0.7465672777334975
+2026-01-23 21:24:00,870 - INFO - Gradient Boosting ROC-AUC Score: 0.7410384340679247
+2026-01-23 21:24:00,870 - INFO - XGBoost ROC-AUC Score: 0.6898322585319905
+2026-01-23 21:24:00,870 - INFO - SVM ROC-AUC Score: 0.4975144140693739
+2026-01-23 21:24:00,870 - INFO - ===================================
+2026-01-23 21:24:00,870 - INFO - BEST MODEL: Naive Bayes
+2026-01-23 21:24:00,870 - INFO - BEST ROC-AUC: 0.7719251710538573
+2026-01-23 21:24:00,870 - INFO - ===================================
+2026-01-23 21:24:00,870 - INFO - Tuning Logistic | X_train: (5634, 36), y_train: (5634,)
+2026-01-23 21:24:00,870 - INFO - Tuning Logistic | X_test: (1409, 36), y_test: (1409,)
+2026-01-23 21:24:00,870 - INFO - Tuning BEST model: Naive Bayes
+2026-01-23 21:24:08,409 - INFO - Best Parameters: {'var_smoothing': 1e-12}
+2026-01-23 21:24:08,409 - INFO - Best CV ROC-AUC: 0.7677648303638114
+2026-01-23 21:24:08,416 - INFO - Tuned Naive Bayes Test Accuracy: 0.7388218594748048
+2026-01-23 21:24:08,416 - INFO - Tuned Naive Bayes Test ROC-AUC: 0.7719251710538573
+2026-01-23 21:24:08,417 - INFO - Naive Bayes saved successfully as Churn_Prediction_Best_Model.pkl

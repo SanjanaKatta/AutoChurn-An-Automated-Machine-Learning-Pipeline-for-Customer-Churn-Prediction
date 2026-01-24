@@ -1,0 +1,468 @@
+2026-01-23 21:23:22,477 - DEBUG - Label Encoding
+2026-01-23 21:23:22,477 - INFO - Before X_train:       gender
+2142  Female
+1623  Female
+6074    Male
+1362    Male
+6754    Male
+2026-01-23 21:23:22,477 - INFO - Before X_test:       gender
+185   Female
+2715    Male
+3825  Female
+1807  Female
+132     Male
+2026-01-23 21:23:22,492 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,492 - INFO - After X_train:       gender
+2142       0
+1623       0
+6074       1
+1362       1
+6754       1
+2026-01-23 21:23:22,492 - INFO - After X_test:       gender
+185        0
+2715       1
+3825       0
+1807       0
+132        1
+2026-01-23 21:23:22,492 - DEBUG - Label Encoding
+2026-01-23 21:23:22,492 - INFO - Before X_train:      Partner
+2142      No
+1623      No
+6074     Yes
+1362      No
+6754      No
+2026-01-23 21:23:22,492 - INFO - Before X_test:      Partner
+185      Yes
+2715      No
+3825     Yes
+1807      No
+132       No
+2026-01-23 21:23:22,509 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,510 - INFO - After X_train:       Partner
+2142        0
+1623        0
+6074        1
+1362        0
+6754        0
+2026-01-23 21:23:22,510 - INFO - After X_test:       Partner
+185         1
+2715        0
+3825        1
+1807        0
+132         0
+2026-01-23 21:23:22,510 - DEBUG - Label Encoding
+2026-01-23 21:23:22,510 - INFO - Before X_train:      Dependents
+2142        Yes
+1623         No
+6074         No
+1362         No
+6754        Yes
+2026-01-23 21:23:22,527 - INFO - Before X_test:      Dependents
+185          No
+2715         No
+3825        Yes
+1807         No
+132          No
+2026-01-23 21:23:22,529 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,531 - INFO - After X_train:       Dependents
+2142           0
+1623           1
+6074           1
+1362           1
+6754           0
+2026-01-23 21:23:22,535 - INFO - After X_test:       Dependents
+185            1
+2715           1
+3825           0
+1807           1
+132            1
+2026-01-23 21:23:22,538 - DEBUG - Label Encoding
+2026-01-23 21:23:22,541 - INFO - Before X_train:      PhoneService
+2142          Yes
+1623          Yes
+6074           No
+1362          Yes
+6754          Yes
+2026-01-23 21:23:22,545 - INFO - Before X_test:      PhoneService
+185            No
+2715          Yes
+3825          Yes
+1807          Yes
+132           Yes
+2026-01-23 21:23:22,547 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,550 - INFO - After X_train:       PhoneService
+2142             0
+1623             0
+6074             1
+1362             0
+6754             0
+2026-01-23 21:23:22,552 - INFO - After X_test:       PhoneService
+185              1
+2715             0
+3825             0
+1807             0
+132              0
+2026-01-23 21:23:22,555 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,558 - INFO - Before X_train:          MultipleLines
+2142                No
+1623               Yes
+6074  No phone service
+1362                No
+6754               Yes
+2026-01-23 21:23:22,561 - INFO - Before X_test:          MultipleLines
+185   No phone service
+2715               Yes
+3825                No
+1807                No
+132                 No
+2026-01-23 21:23:22,563 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,567 - INFO - After X_train:    MultipleLines_No phone service  MultipleLines_Yes
+0                           False              False
+1                           False               True
+2                            True              False
+3                           False              False
+4                           False               True
+2026-01-23 21:23:22,570 - INFO - After X_test:    MultipleLines_No phone service  MultipleLines_Yes
+0                            True              False
+1                           False               True
+2                           False              False
+3                           False              False
+4                           False              False
+2026-01-23 21:23:22,571 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,571 - INFO - Before X_train:      InternetService
+2142             DSL
+1623     Fiber optic
+6074             DSL
+1362     Fiber optic
+6754             DSL
+2026-01-23 21:23:22,571 - INFO - Before X_test:      InternetService
+185              DSL
+2715              No
+3825              No
+1807     Fiber optic
+132              DSL
+2026-01-23 21:23:22,571 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,587 - INFO - After X_train:    InternetService_Fiber optic  InternetService_No
+0                        False               False
+1                         True               False
+2                        False               False
+3                         True               False
+4                        False               False
+2026-01-23 21:23:22,587 - INFO - After X_test:    InternetService_Fiber optic  InternetService_No
+0                        False               False
+1                        False                True
+2                        False                True
+3                         True               False
+4                        False               False
+2026-01-23 21:23:22,587 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,587 - INFO - Before X_train:      OnlineSecurity
+2142            Yes
+1623             No
+6074             No
+1362             No
+6754            Yes
+2026-01-23 21:23:22,587 - INFO - Before X_test:            OnlineSecurity
+185                    No
+2715  No internet service
+3825  No internet service
+1807                   No
+132                    No
+2026-01-23 21:23:22,603 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,606 - INFO - After X_train:    OnlineSecurity_No internet service  OnlineSecurity_Yes
+0                               False                True
+1                               False               False
+2                               False               False
+3                               False               False
+4                               False                True
+2026-01-23 21:23:22,608 - INFO - After X_test:    OnlineSecurity_No internet service  OnlineSecurity_Yes
+0                               False               False
+1                                True               False
+2                                True               False
+3                               False               False
+4                               False               False
+2026-01-23 21:23:22,613 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,616 - INFO - Before X_train:      OnlineBackup
+2142           No
+1623          Yes
+6074           No
+1362           No
+6754          Yes
+2026-01-23 21:23:22,618 - INFO - Before X_test:              OnlineBackup
+185                    No
+2715  No internet service
+3825  No internet service
+1807                   No
+132                    No
+2026-01-23 21:23:22,618 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,618 - INFO - After X_train:    OnlineBackup_No internet service  OnlineBackup_Yes
+0                             False             False
+1                             False              True
+2                             False             False
+3                             False             False
+4                             False              True
+2026-01-23 21:23:22,625 - INFO - After X_test:    OnlineBackup_No internet service  OnlineBackup_Yes
+0                             False             False
+1                              True             False
+2                              True             False
+3                             False             False
+4                             False             False
+2026-01-23 21:23:22,632 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,634 - INFO - Before X_train:      DeviceProtection
+2142              Yes
+1623               No
+6074               No
+1362               No
+6754               No
+2026-01-23 21:23:22,636 - INFO - Before X_test:          DeviceProtection
+185                    No
+2715  No internet service
+3825  No internet service
+1807                  Yes
+132                    No
+2026-01-23 21:23:22,636 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,636 - INFO - After X_train:    DeviceProtection_No internet service  DeviceProtection_Yes
+0                                 False                  True
+1                                 False                 False
+2                                 False                 False
+3                                 False                 False
+4                                 False                 False
+2026-01-23 21:23:22,636 - INFO - After X_test:    DeviceProtection_No internet service  DeviceProtection_Yes
+0                                 False                 False
+1                                  True                 False
+2                                  True                 False
+3                                 False                  True
+4                                 False                 False
+2026-01-23 21:23:22,649 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,649 - INFO - Before X_train:      TechSupport
+2142          No
+1623          No
+6074          No
+1362          No
+6754         Yes
+2026-01-23 21:23:22,649 - INFO - Before X_test:               TechSupport
+185                    No
+2715  No internet service
+3825  No internet service
+1807                   No
+132                   Yes
+2026-01-23 21:23:22,649 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,658 - INFO - After X_train:    TechSupport_No internet service  TechSupport_Yes
+0                            False            False
+1                            False            False
+2                            False            False
+3                            False            False
+4                            False             True
+2026-01-23 21:23:22,667 - INFO - After X_test:    TechSupport_No internet service  TechSupport_Yes
+0                            False            False
+1                             True            False
+2                             True            False
+3                            False            False
+4                            False             True
+2026-01-23 21:23:22,682 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,685 - INFO - Before X_train:      StreamingTV
+2142          No
+1623         Yes
+6074          No
+1362          No
+6754          No
+2026-01-23 21:23:22,688 - INFO - Before X_test:               StreamingTV
+185                    No
+2715  No internet service
+3825  No internet service
+1807                   No
+132                    No
+2026-01-23 21:23:22,690 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,693 - INFO - After X_train:    StreamingTV_No internet service  StreamingTV_Yes
+0                            False            False
+1                            False             True
+2                            False            False
+3                            False            False
+4                            False            False
+2026-01-23 21:23:22,696 - INFO - After X_test:    StreamingTV_No internet service  StreamingTV_Yes
+0                            False            False
+1                             True            False
+2                             True            False
+3                            False            False
+4                            False            False
+2026-01-23 21:23:22,703 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,706 - INFO - Before X_train:      StreamingMovies
+2142             Yes
+1623             Yes
+6074              No
+1362              No
+6754              No
+2026-01-23 21:23:22,710 - INFO - Before X_test:           StreamingMovies
+185                    No
+2715  No internet service
+3825  No internet service
+1807                   No
+132                    No
+2026-01-23 21:23:22,714 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,717 - INFO - After X_train:    StreamingMovies_No internet service  StreamingMovies_Yes
+0                                False                 True
+1                                False                 True
+2                                False                False
+3                                False                False
+4                                False                False
+2026-01-23 21:23:22,720 - INFO - After X_test:    StreamingMovies_No internet service  StreamingMovies_Yes
+0                                False                False
+1                                 True                False
+2                                 True                False
+3                                False                False
+4                                False                False
+2026-01-23 21:23:22,728 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,728 - INFO - Before X_train:             Contract
+2142        One year
+1623        Two year
+6074  Month-to-month
+1362  Month-to-month
+6754        Two year
+2026-01-23 21:23:22,728 - INFO - Before X_test:             Contract
+185   Month-to-month
+2715  Month-to-month
+3825        Two year
+1807  Month-to-month
+132         Two year
+2026-01-23 21:23:22,735 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,735 - INFO - After X_train:    Contract_One year  Contract_Two year
+0               True              False
+1              False               True
+2              False              False
+3              False              False
+4              False               True
+2026-01-23 21:23:22,735 - INFO - After X_test:    Contract_One year  Contract_Two year
+0              False              False
+1              False              False
+2              False               True
+3              False              False
+4              False               True
+2026-01-23 21:23:22,750 - DEBUG - Label Encoding
+2026-01-23 21:23:22,750 - INFO - Before X_train:      PaperlessBilling
+2142               No
+1623              Yes
+6074              Yes
+1362              Yes
+6754              Yes
+2026-01-23 21:23:22,750 - INFO - Before X_test:      PaperlessBilling
+185               Yes
+2715              Yes
+3825               No
+1807               No
+132                No
+2026-01-23 21:23:22,750 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,750 - INFO - After X_train:       PaperlessBilling
+2142                 0
+1623                 1
+6074                 1
+1362                 1
+6754                 1
+2026-01-23 21:23:22,762 - INFO - After X_test:       PaperlessBilling
+185                  1
+2715                 1
+3825                 0
+1807                 0
+132                  0
+2026-01-23 21:23:22,768 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,770 - INFO - Before X_train:                   PaymentMethod
+2142               Mailed check
+1623  Bank transfer (automatic)
+6074           Electronic check
+1362           Electronic check
+6754  Bank transfer (automatic)
+2026-01-23 21:23:22,770 - INFO - Before X_test:                   PaymentMethod
+185            Electronic check
+2715  Bank transfer (automatic)
+3825               Mailed check
+1807           Electronic check
+132   Bank transfer (automatic)
+2026-01-23 21:23:22,777 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,781 - INFO - After X_train:    PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+0                                  False                           False                        True
+1                                  False                           False                       False
+2                                  False                            True                       False
+3                                  False                            True                       False
+4                                  False                           False                       False
+2026-01-23 21:23:22,784 - INFO - After X_test:    PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+0                                  False                            True                       False
+1                                  False                           False                       False
+2                                  False                           False                        True
+3                                  False                            True                       False
+4                                  False                           False                       False
+2026-01-23 21:23:22,789 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,793 - INFO - Before X_train:        SIM
+2142  BSNL
+1623   Jio
+6074  BSNL
+1362   Jio
+6754  BSNL
+2026-01-23 21:23:22,793 - INFO - Before X_test:          SIM
+185       Vi
+2715    BSNL
+3825    BSNL
+1807  Airtel
+132     BSNL
+2026-01-23 21:23:22,793 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,793 - INFO - After X_train:    SIM_BSNL  SIM_Jio  SIM_Vi
+0      True    False   False
+1     False     True   False
+2      True    False   False
+3     False     True   False
+4      True    False   False
+2026-01-23 21:23:22,805 - INFO - After X_test:    SIM_BSNL  SIM_Jio  SIM_Vi
+0     False    False    True
+1      True    False   False
+2      True    False   False
+3     False    False   False
+4      True    False   False
+2026-01-23 21:23:22,805 - DEBUG - Label Encoding
+2026-01-23 21:23:22,805 - INFO - Before X_train:       DeviceType
+2142  New Device
+1623  Old Device
+6074  Old Device
+1362  Old Device
+6754  Old Device
+2026-01-23 21:23:22,805 - INFO - Before X_test:       DeviceType
+185   Old Device
+2715  Old Device
+3825  Old Device
+1807  New Device
+132   Old Device
+2026-01-23 21:23:22,805 - DEBUG - After Label Encoding
+2026-01-23 21:23:22,822 - INFO - After X_train:       DeviceType
+2142           0
+1623           1
+6074           1
+1362           1
+6754           1
+2026-01-23 21:23:22,825 - INFO - After X_test:       DeviceType
+185            1
+2715           1
+3825           1
+1807           0
+132            1
+2026-01-23 21:23:22,833 - DEBUG - One Hot Encoding
+2026-01-23 21:23:22,837 - INFO - Before X_train:          Region
+2142  Sub Urban
+1623      Urban
+6074  Sub Urban
+1362      Urban
+6754  Sub Urban
+2026-01-23 21:23:22,837 - INFO - Before X_test:          Region
+185   Sub Urban
+2715      Rural
+3825      Rural
+1807      Urban
+132   Sub Urban
+2026-01-23 21:23:22,837 - DEBUG - After OneHot Encoding
+2026-01-23 21:23:22,837 - INFO - After X_train:    Region_Sub Urban  Region_Urban
+0              True         False
+1             False          True
+2              True         False
+3             False          True
+4              True         False
+2026-01-23 21:23:22,837 - INFO - After X_test:    Region_Sub Urban  Region_Urban
+0              True         False
+1             False         False
+2             False         False
+3             False          True
+4              True         False

@@ -1,0 +1,18 @@
+2026-01-23 21:23:39,009 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (5634, 4)
+2026-01-23 21:23:39,009 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (1409, 4)
+2026-01-23 21:23:39,009 - INFO - Columns removed (constant): Index([], dtype='object')
+2026-01-23 21:23:39,009 - INFO - After Constant Technique: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')  --> (5634, 4)
+2026-01-23 21:23:39,009 - INFO - After Constant Technique: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')  --> (1409, 4)
+2026-01-23 21:23:39,009 - INFO - Columns removed (quasi-constant): Index([], dtype='object')
+2026-01-23 21:23:39,009 - INFO - After Quasi Constant Technique: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')  --> (5634, 4)
+2026-01-23 21:23:39,009 - INFO - After Quasi Constant Technique: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')  --> (1409, 4)
+2026-01-23 21:23:39,009 - INFO - After Chi-Square FS : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (5634, 4)
+2026-01-23 21:23:39,009 - INFO - Before hypothesis testing : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (5634, 4)
+2026-01-23 21:23:39,009 - INFO - Before hypothesis testing : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (1409, 4)
+2026-01-23 21:23:39,025 - INFO - SeniorCitizen | p-value = 0.000000
+2026-01-23 21:23:39,025 - INFO - tenure | p-value = 0.000000
+2026-01-23 21:23:39,025 - INFO - MonthlyCharges | p-value = 0.000000
+2026-01-23 21:23:39,026 - INFO - TotalCharges | p-value = 0.000000
+2026-01-23 21:23:39,026 - INFO - Features removed by hypothesis testing: []
+2026-01-23 21:23:39,026 - INFO - After hypothesis testing : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (5634, 4)
+2026-01-23 21:23:39,026 - INFO - After hypothesis testing : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object') -> (1409, 4)

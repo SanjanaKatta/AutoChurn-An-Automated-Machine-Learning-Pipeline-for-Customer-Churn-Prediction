@@ -1,0 +1,120 @@
+2026-01-23 14:40:48,185 - INFO - Mean imputation for missing values
+2026-01-23 14:40:48,188 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,188 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,196 - INFO - Mean imputation completed
+2026-01-23 14:40:48,196 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,196 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,196 - INFO - Median imputation for missing values
+2026-01-23 14:40:48,201 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,202 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,202 - INFO - Median imputation completed
+2026-01-23 14:40:48,202 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,202 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,202 - INFO - Mode imputation for missing values
+2026-01-23 14:40:48,202 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,202 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,217 - INFO - Mode imputation completed
+2026-01-23 14:40:48,217 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,217 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,217 - INFO - KNN imputation for missing values
+2026-01-23 14:40:48,217 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,217 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,233 - INFO - KNN imputation completed
+2026-01-23 14:40:48,233 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,233 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,233 - INFO - Forward fill for missing values
+2026-01-23 14:40:48,233 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,237 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,237 - INFO - Forward fill completed
+2026-01-23 14:40:48,237 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,242 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,242 - INFO - Backward fill for missing values
+2026-01-23 14:40:48,242 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,242 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,245 - INFO - Backward fill completed
+2026-01-23 14:40:48,245 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,247 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,249 - INFO - Random Sample Imputation for missing values
+2026-01-23 14:40:48,249 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,249 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - Random Sample Imputation Completed
+2026-01-23 14:40:48,252 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - Constant imputation for missing values, value=0
+2026-01-23 14:40:48,252 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - Constant imputation completed
+2026-01-23 14:40:48,252 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - After imputation X_test : TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,252 - INFO - End-of-Distribution Imputation for missing values
+2026-01-23 14:40:48,265 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,266 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,266 - INFO - End-of-Distribution Imputation completed
+2026-01-23 14:40:48,266 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - After imputation X_test : TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Interpolation for missing values
+2026-01-23 14:40:48,268 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Interpolation completed
+2026-01-23 14:40:48,268 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - After imputation X_test : TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Iterative (Probabilistic) Imputation started
+2026-01-23 14:40:48,268 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Before imputation X_test : TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - Iterative Imputation completed
+2026-01-23 14:40:48,268 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,268 - INFO - After imputation X_test : TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,281 - INFO - Random Sample Imputation for missing values
+2026-01-23 14:40:48,281 - INFO - Before imputation X_train: TotalCharges    10
+dtype: int64
+2026-01-23 14:40:48,281 - INFO - Before imputation X_test: TotalCharges    1
+dtype: int64
+2026-01-23 14:40:48,287 - INFO - Random Sample Imputation Completed
+2026-01-23 14:40:48,287 - INFO - After imputation X_train: TotalCharges    0
+dtype: int64
+2026-01-23 14:40:48,287 - INFO - After imputation X_test: TotalCharges    0
+dtype: int64

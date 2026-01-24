@@ -1,0 +1,72 @@
+2026-01-23 21:23:22,837 - INFO - IQR Capping Technique
+2026-01-23 21:23:22,856 - INFO - IQR Capping Technique Completed
+2026-01-23 21:23:23,257 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_iqr.png
+2026-01-23 21:23:23,664 - INFO - Zscore Capping Technique
+2026-01-23 21:23:23,665 - INFO - Zscore Capping Technique Completed
+2026-01-23 21:23:23,865 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_zscore.png
+2026-01-23 21:23:24,649 - INFO - MAD Capping Technique
+2026-01-23 21:23:24,649 - INFO - MAD Capping Technique Completed
+2026-01-23 21:23:24,876 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_mad.png
+2026-01-23 21:23:25,352 - INFO - Percentile Capping Technique
+2026-01-23 21:23:25,363 - INFO - Percentile Capping Technique Completed
+2026-01-23 21:23:25,603 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_percentile.png
+2026-01-23 21:23:26,137 - INFO - Winsorizing Technique
+2026-01-23 21:23:26,143 - INFO - Winsorizing Technique Completed
+2026-01-23 21:23:26,331 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_winsor.png
+2026-01-23 21:23:26,868 - INFO - Clipping Technique
+2026-01-23 21:23:26,886 - INFO - Clipping Technique Completed
+2026-01-23 21:23:27,149 - INFO - Saved outlier plot: plot_outliers/SeniorCitizen_clip.png
+2026-01-23 21:23:27,721 - INFO - IQR Capping Technique
+2026-01-23 21:23:27,727 - INFO - IQR Capping Technique Completed
+2026-01-23 21:23:27,899 - INFO - Saved outlier plot: plot_outliers/tenure_iqr.png
+2026-01-23 21:23:28,259 - INFO - Zscore Capping Technique
+2026-01-23 21:23:28,262 - INFO - Zscore Capping Technique Completed
+2026-01-23 21:23:28,462 - INFO - Saved outlier plot: plot_outliers/tenure_zscore.png
+2026-01-23 21:23:28,808 - INFO - MAD Capping Technique
+2026-01-23 21:23:28,811 - INFO - MAD Capping Technique Completed
+2026-01-23 21:23:28,996 - INFO - Saved outlier plot: plot_outliers/tenure_mad.png
+2026-01-23 21:23:29,337 - INFO - Percentile Capping Technique
+2026-01-23 21:23:29,355 - INFO - Percentile Capping Technique Completed
+2026-01-23 21:23:29,644 - INFO - Saved outlier plot: plot_outliers/tenure_percentile.png
+2026-01-23 21:23:30,023 - INFO - Winsorizing Technique
+2026-01-23 21:23:30,041 - INFO - Winsorizing Technique Completed
+2026-01-23 21:23:30,247 - INFO - Saved outlier plot: plot_outliers/tenure_winsor.png
+2026-01-23 21:23:30,603 - INFO - Clipping Technique
+2026-01-23 21:23:30,603 - INFO - Clipping Technique Completed
+2026-01-23 21:23:30,809 - INFO - Saved outlier plot: plot_outliers/tenure_clip.png
+2026-01-23 21:23:31,254 - INFO - IQR Capping Technique
+2026-01-23 21:23:31,258 - INFO - IQR Capping Technique Completed
+2026-01-23 21:23:31,421 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_iqr.png
+2026-01-23 21:23:31,827 - INFO - Zscore Capping Technique
+2026-01-23 21:23:31,830 - INFO - Zscore Capping Technique Completed
+2026-01-23 21:23:31,993 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_zscore.png
+2026-01-23 21:23:32,539 - INFO - MAD Capping Technique
+2026-01-23 21:23:32,559 - INFO - MAD Capping Technique Completed
+2026-01-23 21:23:32,770 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_mad.png
+2026-01-23 21:23:33,190 - INFO - Percentile Capping Technique
+2026-01-23 21:23:33,194 - INFO - Percentile Capping Technique Completed
+2026-01-23 21:23:33,367 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_percentile.png
+2026-01-23 21:23:33,768 - INFO - Winsorizing Technique
+2026-01-23 21:23:33,773 - INFO - Winsorizing Technique Completed
+2026-01-23 21:23:33,955 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_winsor.png
+2026-01-23 21:23:34,370 - INFO - Clipping Technique
+2026-01-23 21:23:34,374 - INFO - Clipping Technique Completed
+2026-01-23 21:23:34,555 - INFO - Saved outlier plot: plot_outliers/MonthlyCharges_clip.png
+2026-01-23 21:23:35,071 - INFO - IQR Capping Technique
+2026-01-23 21:23:35,071 - INFO - IQR Capping Technique Completed
+2026-01-23 21:23:35,247 - INFO - Saved outlier plot: plot_outliers/TotalCharges_iqr.png
+2026-01-23 21:23:35,668 - INFO - Zscore Capping Technique
+2026-01-23 21:23:35,678 - INFO - Zscore Capping Technique Completed
+2026-01-23 21:23:35,874 - INFO - Saved outlier plot: plot_outliers/TotalCharges_zscore.png
+2026-01-23 21:23:36,274 - INFO - MAD Capping Technique
+2026-01-23 21:23:36,274 - INFO - MAD Capping Technique Completed
+2026-01-23 21:23:36,462 - INFO - Saved outlier plot: plot_outliers/TotalCharges_mad.png
+2026-01-23 21:23:36,857 - INFO - Percentile Capping Technique
+2026-01-23 21:23:36,863 - INFO - Percentile Capping Technique Completed
+2026-01-23 21:23:37,040 - INFO - Saved outlier plot: plot_outliers/TotalCharges_percentile.png
+2026-01-23 21:23:37,477 - INFO - Winsorizing Technique
+2026-01-23 21:23:37,477 - INFO - Winsorizing Technique Completed
+2026-01-23 21:23:37,816 - INFO - Saved outlier plot: plot_outliers/TotalCharges_winsor.png
+2026-01-23 21:23:38,290 - INFO - Clipping Technique
+2026-01-23 21:23:38,308 - INFO - Clipping Technique Completed
+2026-01-23 21:23:38,523 - INFO - Saved outlier plot: plot_outliers/TotalCharges_clip.png

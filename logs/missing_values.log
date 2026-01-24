@@ -1,0 +1,49 @@
+2026-01-23 21:23:21,956 - INFO - Mean Imputation
+2026-01-23 21:23:21,961 - INFO - Median Imputation
+2026-01-23 21:23:21,968 - INFO - Mode Imputation
+2026-01-23 21:23:21,971 - INFO - Random Sample Imputation
+2026-01-23 21:23:21,975 - INFO - KNN Imputation
+2026-01-23 21:23:21,977 - INFO - Iterative (MICE) Imputation
+2026-01-23 21:23:21,977 - INFO - Forward Fill Imputation started
+2026-01-23 21:23:21,977 - INFO - Before imputation X_train:
+TotalCharges    10
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - Before imputation X_test:
+TotalCharges    1
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - Forward Fill Imputation completed
+2026-01-23 21:23:21,977 - INFO - After imputation X_train:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - After imputation X_test:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - Backward Fill Imputation started
+2026-01-23 21:23:21,977 - INFO - Before imputation X_train:
+TotalCharges    10
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - Before imputation X_test:
+TotalCharges    1
+dtype: int64
+2026-01-23 21:23:21,977 - INFO - Backward Fill Imputation completed
+2026-01-23 21:23:21,993 - INFO - After imputation X_train:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - After imputation X_test:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - Interpolation Imputation started
+2026-01-23 21:23:21,993 - INFO - Before imputation X_train:
+TotalCharges    10
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - Before imputation X_test:
+TotalCharges    1
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - Interpolation Imputation completed
+2026-01-23 21:23:21,993 - INFO - After imputation X_train:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - After imputation X_test:
+TotalCharges    0
+dtype: int64
+2026-01-23 21:23:21,993 - INFO - Random Sample Imputation
