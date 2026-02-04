@@ -39,10 +39,8 @@ EDA was performed to understand customer behavior and data characteristics. Both
 - Correlation analysis between features and churn
 
 ### EDA files:
-- `EDA.ipynb`
 - `eda.py`
 - `EDA_Task-1.pdf`
-- `EDA_Task-1.docx`
 - Logs: `logs/eda.log`
 
 ---
