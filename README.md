@@ -1,28 +1,39 @@
-# 🚀 ChurnSense: An Intelligent End-to-End Customer Churn Prediction System
-
-ChurnSense is a complete **end-to-end machine learning project** designed to predict **customer churn in the telecom domain**. The project covers the entire ML lifecycle — from **exploratory data analysis (EDA)** and **data preprocessing**, to **automated model selection**, **performance evaluation**, and **deployment using Flask**.
-
-The key objective of this project is to build an **intelligent and automated pipeline** that selects the best preprocessing techniques and machine learning model based on statistical and performance-driven criteria, rather than relying on manual assumptions.
+ # 🚀An Intelligent End-to-End Customer Churn Prediction System
 
 ---
 
-## 📌 Problem Statement
+## 📌 Project Overview
 
-Customer churn is a major challenge in the telecom industry, as acquiring new customers is significantly more expensive than retaining existing ones. By predicting churn in advance, telecom companies can take proactive retention actions such as personalized offers, service improvements, and targeted communication.
+**ChurnSense** is a complete end-to-end machine learning project designed to predict
+customer churn in the **telecom domain**.
 
-This project aims to accurately predict whether a customer is likely to churn based on historical customer data.
+The project follows an **intelligent, automated ML pipeline** where every decision —
+from data preprocessing to model selection — is made using **statistical validation
+and performance metrics recorded in log files**, instead of manual assumptions.
+
+---
+
+## 🎯 Problem Statement
+
+Customer churn is a major challenge in the telecom industry. Retaining existing
+customers is far more cost-effective than acquiring new ones.
+
+**Objective:**  
+Predict whether a customer is likely to **churn (Yes / No)** using historical customer
+data, enabling proactive customer retention strategies.
 
 ---
 
 ## 📊 Dataset Description
 
 The dataset contains telecom customer information including:
-- Customer demographics (gender, senior citizen, dependents, partner)
-- Service usage details (internet service, phone service, streaming, security, tech support)
-- Contract type, payment method, and billing information
-- Target variable **Churn** indicating whether the customer left the service
 
-Files used:
+- Customer demographics (gender, senior citizen, partner, dependents)
+- Service usage details (internet service, phone service, streaming services)
+- Contract type, payment method, and billing information
+- Target variable: **Churn**
+
+### Files Used
 - `Churn.csv` → Raw dataset  
 - `Churn_Updated.csv` → Cleaned dataset after preprocessing  
 
@@ -30,15 +41,25 @@ Files used:
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-EDA was performed to understand customer behavior and data characteristics. Both **script-based and notebook-based EDA** were implemented.
+EDA was performed to understand customer behavior, data distribution, and potential
+issues before applying machine learning models.
 
-### Key EDA activities:
-- Churn vs non-churn distribution analysis
-- Numerical feature distribution analysis (tenure, monthly charges, total charges)
-- Detection of missing values and outliers
+### EDA Activities Performed
+- Churn vs Non-Churn distribution analysis
+- Numerical feature distribution analysis:
+  - Tenure
+  - MonthlyCharges
+  - TotalCharges
+- Missing value detection
+- Outlier detection using visual analysis
 - Correlation analysis between features and churn
 
-### EDA files:
+### Purpose of EDA
+- Identify data quality issues
+- Understand churn-driving patterns
+- Guide preprocessing decisions
+
+### Files
 - `eda.py`
 - `EDA_Task-1.pdf`
 - Logs: `logs/eda.log`
@@ -47,160 +68,263 @@ EDA was performed to understand customer behavior and data characteristics. Both
 
 ## ⚙️ Intelligent Machine Learning Pipeline
 
-The heart of this project is an **automated ML pipeline** implemented in `main.py`, where multiple preprocessing techniques are evaluated and the best ones are selected automatically.
+The pipeline is implemented in `main.py` and follows a **step-by-step automated
+selection strategy**, where multiple techniques are evaluated and the **best one is
+chosen using logged statistical and performance metrics**.
 
 ---
 
-### 🧩 Missing Value Handling
-Multiple techniques were applied and evaluated:
-- Mean, Median, Mode
-- Random Imputation
-- KNN Imputation
+## 🧩 Missing Value Handling
+
+Missing values were detected primarily in the **TotalCharges** column.
+
+### Techniques Evaluated
+- Mean Imputation  
+- Median Imputation  
+- Mode Imputation  
+- Random Sample Imputation  
+- KNN Imputation  
 - Iterative Imputation  
 
-The best technique was selected based on **distribution similarity (mean & standard deviation preservation)**.
+### Selection Logic (Per Technique)
+- **Mean / Median / Mode:** Compared impact on mean and standard deviation
+- **Random Sample:** Checked preservation of original distribution
+- **KNN / Iterative:** Evaluated variance distortion and computation cost
 
-Files:
+### Selected Technique
+✅ **Random Sample Imputation**
+
+### Reason for Selection
+- Best preservation of original data distribution
+- Minimal change in mean and standard deviation
+- Reduced bias compared to constant-value imputation
+- Confirmed through logged statistical similarity scores
+
+### Files
 - `missing_value_techniques.py`
 - Logs: `missing_value_techniques.log`, `missing_values.log`
 
 ---
 
-### 🔄 Variable Transformation
-To handle skewness in numerical features, multiple transformations were tested:
-- Log
-- Square Root
-- Cube Root
-- Box-Cox
-- Yeo-Johnson
-- Quantile Transformation  
+## 🔄 Variable Transformation
 
-The transformation with **minimum skewness** was automatically selected.
+To reduce skewness and normalize numerical features, multiple transformations were
+evaluated automatically.
 
-Files:
+### Techniques Evaluated & Selection Logic
+
+- **Log Transformation**
+- **Square Root Transformation**
+- **Cube Root Transformation**
+- **Box-Cox Transformation**
+- **Yeo-Johnson Transformation**
+- **Quantile Transformation**
+
+### Selection Logic
+- Skewness calculated **before and after** each transformation
+- Transformation with **minimum resulting skewness** was selected automatically
+
+### Selected Technique
+✅ **Yeo-Johnson Transformation**
+
+### Reason for Selection
+- Achieved lowest skewness across numerical features
+- Works with zero and negative values
+- Preserved feature relationships better than quantile-based methods
+
+### Files
 - `variable_transformation.py`
 - Logs: `variable_transformation.log`
 
 ---
 
-### 🚨 Outlier Detection & Treatment
-Several outlier-handling techniques were evaluated:
-- IQR Capping
-- Z-Score
-- MAD
-- Percentile Capping
-- Winsorization
+## 🚨 Outlier Detection & Treatment
+
+Outliers were handled using multiple statistical techniques.
+
+### Techniques Evaluated
+- IQR Capping  
+- Z-Score  
+- MAD  
+- Percentile Capping  
+- Winsorization  
 - Clipping  
 
-The best technique was selected using a **combined score of skewness, kurtosis, and remaining outlier ratio**.
+### Selection Logic
+Each technique was scored using:
+- Post-treatment skewness
+- Kurtosis
+- Remaining outlier ratio
 
-Files:
+### Selected Technique
+✅ **Best technique selected automatically based on combined score**
+
+### Files
 - `outlier_handling.py`
 - Logs: `outlier_handling.log`
 - Folder: `plot_outliers/`
 
 ---
 
-### 🔠 Categorical to Numerical Encoding
-Categorical features were handled intelligently:
-- Binary features → Label Encoding
-- Multi-class features → One-Hot / Frequency / Binary Encoding (evaluated automatically)
+## 🔠 Categorical to Numerical Encoding
 
-Files:
+Categorical variables were converted to numerical form intelligently.
+
+### Encoding Strategy
+- Binary categorical features → Label Encoding
+- Multi-class categorical features → Evaluated among:
+  - One-Hot Encoding
+  - Frequency Encoding
+  - Binary Encoding
+
+### Selection Logic
+- Based on model performance and dimensionality impact
+
+### Files
 - `cat_to_num_techniques.py`
 - Logs: `cat_to_num_techniques.log`
 
 ---
 
-### 🎯 Feature Selection
-Feature selection techniques were applied to retain only the most relevant features, improving model performance and reducing complexity.
+## 🎯 Feature Selection
 
-Files:
+Feature selection techniques were applied to retain only the most relevant features.
+
+### Selection Logic
+- Removed low-importance and redundant features
+- Improved model generalization
+- Reduced overfitting risk
+
+### Files
 - `feature_selection.py`
 - Logs: `feature_selection.log`
 
 ---
 
-### ⚖️ Data Balancing
-Class imbalance was handled using balancing techniques to ensure better learning for churned customers.
+## ⚖️ Data Balancing
 
-Files:
+Class imbalance between churned and non-churned customers was addressed.
+
+### Selection Logic
+- Ensured better learning for minority (churned) class
+- Prevented model bias toward majority class
+
+### Files
 - `data_balancing.py`
 - Logs: `data_balancing.log`
 
 ---
 
-### 📐 Feature Scaling
-Multiple scalers were evaluated:
-- StandardScaler
-- MinMaxScaler
-- RobustScaler
+## 📐 Feature Scaling
+
+Multiple scaling techniques were evaluated.
+
+### Scalers Evaluated
+- StandardScaler  
+- MinMaxScaler  
+- RobustScaler  
 - MaxAbsScaler  
 
-The best-performing scaler was selected and saved.
+### Selection Logic
+- Based on downstream model ROC-AUC performance
 
-File:
+### Selected Scaler
+✅ **Best-performing scaler selected and saved**
+
+### File
 - `scaler_path.pkl`
 
 ---
 
 ## 🤖 Model Training & Evaluation
 
-Multiple machine learning models were trained and evaluated using **ROC-AUC score** as the primary metric.
+### Models Trained
+- KNN  
+- Naive Bayes  
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- AdaBoost  
+- Gradient Boosting  
+- XGBoost  
+- SVM  
 
-Models trained:
-- K-Nearest Neighbors (KNN)
-- Naive Bayes
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- AdaBoost
-- Gradient Boosting
-- XGBoost
-- Support Vector Machine (SVM)
+### Evaluation Metrics
+- Accuracy
+- **ROC-AUC (Primary Metric)**
 
-Files:
+### Files
 - `All_models.py`
 - Logs: `All_Models.log`
-- Performance plot: `ROC_AUC_Curve.png`
+- ROC Curve: `ROC_AUC_Curve.png`
 
 ---
 
 ## 🏆 Best Model Selection
 
-Based on ROC-AUC comparison, **Naive Bayes** was selected as the best-performing model. The trained model was saved for deployment.
+### ROC-AUC Scores (from logs)
+- KNN: 0.6385  
+- **Naive Bayes: 0.7719**  
+- Logistic Regression: 0.7316  
+- Decision Tree: 0.6360  
+- Random Forest: 0.6631  
+- AdaBoost: 0.7466  
+- Gradient Boosting: 0.7410  
+- XGBoost: 0.6898  
+- SVM: 0.4975  
 
-File:
+### Selected Best Model
+✅ **Naive Bayes**
+
+### Reason
+- Highest ROC-AUC score
+- Stable probabilistic predictions
+- Best performance after automated preprocessing
+
+### Hyperparameter Tuning
+- Tuned using GridSearchCV
+- Best parameter: `var_smoothing = 1e-12`
+
+### Saved Model
 - `Churn_Prediction_Best_Model.pkl`
 
 ---
 
 ## 🌐 Model Deployment (Flask)
 
-The final model was deployed using a **Flask web application** that allows users to input customer details and receive:
-- Churn prediction (Yes / No)
-- Churn probability
+The final tuned model was deployed using Flask.
 
-Frontend technologies:
-- HTML (`index.html`)
-- CSS (`style.css`)
-- JavaScript (`script.js`)
+### Features
+- User inputs customer details
+- Predicts churn (Yes / No)
+- Displays churn probability
 
-File:
+### Files
 - `app.py`
+- `templates/index.html`
+- `static/style.css`
+- `static/script.js`
 
 ---
 
-
 ## 🛠 Technologies Used
 
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- XGBoost
-- Flask
-- HTML, CSS, JavaScript
-- Matplotlib, Seaborn
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- XGBoost  
+- Flask  
+- HTML, CSS, JavaScript  
+- Matplotlib, Seaborn  
+
+---
+
+## ✅ Conclusion
+
+ChurnSense demonstrates a **fully automated, production-ready ML system** where
+every preprocessing and modeling decision is driven by **logged statistical evidence
+and performance metrics**, ensuring transparency, reliability, and real-world
+applicability.
 
 ---
 
