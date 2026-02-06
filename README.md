@@ -496,6 +496,7 @@ python app.py
 **Sanjana Katta**  
 B.Tech Student | Computer Science & Engineering  
 Machine Learning & Data Science Enthusiast  
+Email - sanjanaa.katta20@gmail.com
 
 📌 Focus Areas:
 - End-to-End Machine Learning Pipelines  
